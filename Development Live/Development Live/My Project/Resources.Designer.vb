@@ -59,5 +59,45 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _2000px_Warning_sign_font_awesome_red() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("2000px-Warning_sign_font_awesome-red", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property _2000px_Warning_sign_font_awesome_red_svg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("2000px-Warning_sign_font_awesome-red.svg", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property alarm_clock_512() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("alarm_clock-512", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property EXCLAMATION() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("EXCLAMATION", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace
