@@ -7,6 +7,7 @@ Public Class Form1
     Dim con2 As SqlConnection = New SqlConnection("Data Source=SOMNOMED-IBM;Initial Catalog=SMProduction;User ID=SOMNOMED-IBM-Guest;Password=Somnomed01")
     Dim con3 As SqlConnection = New SqlConnection("Data Source=SOMNOMED-IBM;Initial Catalog=SMProduction;User ID=SOMNOMED-IBM-Guest;Password=Somnomed01")
 
+    Dim s1case = 0
     Dim s2case = 0
     Dim s3case = 0
     Dim s4case = 0
@@ -31,6 +32,8 @@ Public Class Form1
     Dim s11timer = 0
     Dim s12timer = 0
 
+    Dim showwarning = 0
+
 
     Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
         If Asc(e.KeyChar) = 13 Then
@@ -39,7 +42,7 @@ Public Class Form1
             If (TextBox1.TextLength = 6) Then
                 Timer2.Enabled = False
                 '''''''CHECK SCANNED SOMTRACK'''''''''''
-                Dim ScannedCase As String = "Select PH.SomtrackID, PH.StationID, PH.DateStarted, PD.Status,TS.TableSetID FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.StationID Is Not NULL AND PD.Status IN (1,2) AND PH.SomtrackID = @Som AND TS.TableID = @TS AND PH.StationID <> 1 GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted, Pd.Status, TS.TableSetID  ORDER BY PH.DateStarted ASC"
+                Dim ScannedCase As String = "Select PH.SomtrackID, PH.StationID, PH.DateStarted, PD.Status,TS.TableSetID FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.StationID Is Not NULL AND PD.Status IN (1,2) AND PH.SomtrackID = @Som AND TS.TableID = @TS AND PH.TableNo = @TS GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted, Pd.Status, TS.TableSetID  ORDER BY PH.DateStarted ASC"
                 Dim ScannedCaseQuery As SqlCommand = New SqlCommand(ScannedCase, con)
                 ScannedCaseQuery.Parameters.AddWithValue("@TS", TableSet)
                 ScannedCaseQuery.Parameters.AddWithValue("@Som", TextBox1.Text)
@@ -86,7 +89,7 @@ Public Class Form1
         If SID = 11 Or SID = 12 Then
             SID = "11,12"
         End If
-        Dim ActiveCase As String = "Select PH.SomtrackID, PH.StationID, PD.Status FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.StationID IN (@SID1, @SID2) AND PD.Status = 1 AND TS.TableID = @TS AND PH.SomtrackID <> @Som GROUP BY PH.SomtrackID, PH.StationID, Pd.Status"
+        Dim ActiveCase As String = "Select PH.SomtrackID, PH.StationID, PD.Status FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.StationID IN (@SID1, @SID2) AND PD.Status = 1 AND TS.TableID = @TS AND PH.TableNo = @TS AND PH.SomtrackID <> @Som GROUP BY PH.SomtrackID, PH.StationID, Pd.Status"
         Dim ActiveCaseQuery As SqlCommand = New SqlCommand(ActiveCase, con)
         ActiveCaseQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -138,7 +141,6 @@ Public Class Form1
         con.Close()
 
         If update = 1 Then
-
             ''''UPDATE ACTIVE DETAILS''''
             con.Open()
             Dim UpdateDetails As String = "update PD SET PD.Status = 5, PD.DateEnded = GETDATE() From [SMProduction].[dbo].[ProductionHead] as PH Left Join ProductionDetails as PD ON PD.ProductionHeadID = PH.ProductionHeadID WHERE PH.SomtrackID = @Som And PD.Status = 1"
@@ -168,7 +170,6 @@ Public Class Form1
                 con.Close()
             End If
 
-
             ''''UPDATE NEXT DETAILS''''
             con.Open()
             Dim UpdateNextDetails As String = "Update PD SET PD.Status = 2 FROM [SMProduction].[dbo].[ProductionHead] as PH LEFT JOIN StationProcess as SP ON SP.StationID = PH.StationID LEFT JOIN ProductionDetails as PD ON PD.ProductionHeadID = PH.ProductionHeadID And PD.BOMDID = SP.BOMDID WHERE PH.SomtrackID = @Som AND PD.Status = 3"
@@ -188,9 +189,8 @@ Public Class Form1
     End Sub
     Private Sub StationNextCase(SID)
 
-
         '''''''CHECK STATION NEXT CASE'''''''''''
-        Dim ScannedCase As String = "Select TOP 1 PH.SomtrackID, PH.StationID, PD.Status, PH.DateStarted FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.StationID IN (@SID1, @SID2) AND PD.Status = 2 AND TS.TableID = @TS GROUP BY PH.SomtrackID, PH.StationID, Pd.Status, PH.DateStarted ORDER BY DateStarted ASC"
+        Dim ScannedCase As String = "Select TOP 1 PH.SomtrackID, PH.StationID, PD.Status, PH.DateStarted FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.StationID IN (@SID1, @SID2) AND PD.Status = 2 AND TS.TableID = @TS AND PH.TableNo = @TS GROUP BY PH.SomtrackID, PH.StationID, Pd.Status, PH.DateStarted ORDER BY DateStarted ASC"
         Dim ScannedCaseQuery As SqlCommand = New SqlCommand(ScannedCase, con)
         ScannedCaseQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -231,9 +231,9 @@ Public Class Form1
 
 
             If SID = "11,12" Then
-                UpdateNextDetails = "UPDATE PD Set PD.EmployeeID = TM.EmployeeID , PD.DateStarted = GETDATE(), PD.Status = 1 FROM ProductionDetails as PD LEFT JOIN StationProcess as SP ON PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers as TM ON TM.StationID = SP.StationID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And PD.Status = 2 And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.SomtrackID = @Som AND TM.EmployeeID NOT IN ( SELECT [EmployeeID] FROM [ProductionDetails] WHERE Status = 1)"
+                UpdateNextDetails = "UPDATE PD Set PD.EmployeeID = TM.EmployeeID, PD.DateStarted = GETDATE(), PD.Status = 1 FROM ProductionDetails as PD LEFT JOIN StationProcess as SP ON PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers as TM ON TM.StationID = SP.StationID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS AND PH.TableNo = @TS And PD.Status = 2 And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.SomtrackID = @Som AND TM.EmployeeID NOT IN ( SELECT [EmployeeID] FROM [ProductionDetails] WHERE Status = 1 ) AND SP.StationID = (SELECT MIN(SP.StationID) FROM ProductionDetails as PD LEFT JOIN StationProcess as SP ON PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers as TM ON TM.StationID = SP.StationID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS AND PH.TableNo = @TS And PD.Status = 2 And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.SomtrackID = @Som AND TM.EmployeeID NOT IN ( SELECT [EmployeeID] FROM [ProductionDetails] WHERE Status = 1 ))"
             Else
-                UpdateNextDetails = "UPDATE PD Set PD.EmployeeID = TM.EmployeeID , PD.DateStarted = GETDATE(), PD.Status = 1 FROM ProductionDetails as PD LEFT JOIN StationProcess as SP ON PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers as TM ON TM.StationID = SP.StationID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And PD.Status = 2 And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.SomtrackID = @Som"
+                UpdateNextDetails = "UPDATE PD Set PD.EmployeeID = TM.EmployeeID , PD.DateStarted = GETDATE(), PD.Status = 1 FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And PH.TableNo = @TS And PD.Status = 2 And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PH.SomtrackID = @Som"
 
             End If
             con.Open()
@@ -245,7 +245,14 @@ Public Class Form1
 
             If SID = "11,12" Then
                 con.Open()
-                Dim UpdateHeadStation As String = "Update PH SET PH.StationID = TM.StationID FROM [ProductionDetails] as PD LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFt JOIN TableMembers as TM ON TM.EmployeeID = PD.EmployeeID LEFt JOIN StationProcess as SP ON SP.BOMDID = PD.BOMDID WHERE PH.SomtrackID = @Som AND SP.StationID = 12 AND TM.StationID = 12"
+                Dim UpdateHeadStation As String = "Update PH Set PH.StationID = TM.StationID FROM ProductionHead As PH left join ProductionDetails as PD ON PD.ProductionHeadID = PH.ProductionHeadID LEFt JOIN TableMembers As TM On TM.EmployeeID = PD.EmployeeID WHERE PH.SomtrackID = @Som AND PD.Status = 1 AND TM.TableMemberStatus = 1 AND TM.StationID IN (11, 12)"
+                Dim UpdateHeadStationQuery As SqlCommand = New SqlCommand(UpdateHeadStation, con)
+                UpdateHeadStationQuery.Parameters.AddWithValue("@Som", TextBox1.Text)
+                UpdateHeadStationQuery.ExecuteNonQuery()
+                con.Close()
+            ElseIf SID = "1" Then
+                con.Open()
+                Dim UpdateHeadStation As String = "Update PH Set PH.DateStarted = GETDATE() FROM ProductionHead As PH  WHERE PH.SomtrackID = @Som "
                 Dim UpdateHeadStationQuery As SqlCommand = New SqlCommand(UpdateHeadStation, con)
                 UpdateHeadStationQuery.Parameters.AddWithValue("@Som", TextBox1.Text)
                 UpdateHeadStationQuery.ExecuteNonQuery()
@@ -270,7 +277,10 @@ Public Class Form1
         If errID = 1 Then
             ErrorMessage = "Active Case"
 
-            If SID = 2 Then
+            If SID = 1 Then
+                Label33.ForeColor = Color.Red
+                Label33.Text = ErrorMessage
+            ElseIf SID = 2 Then
                 Label27.ForeColor = Color.Red
                 Label27.Text = ErrorMessage
             ElseIf SID = 3 Then
@@ -308,7 +318,10 @@ Public Class Form1
         ElseIf errID = 2 Then
             ErrorMessage = "On queue"
 
-            If SID = 2 Then
+            If SID = 1 Then
+                Label33.ForeColor = Color.Red
+                Label33.Text = ErrorMessage
+            ElseIf SID = 2 Then
                 Label27.ForeColor = Color.Red
                 Label27.Text = ErrorMessage
             ElseIf SID = 3 Then
@@ -352,7 +365,10 @@ Public Class Form1
         If succID = 1 Then
             ErrorMessage = "Accepted"
 
-            If SID = 2 Then
+            If SID = 1 Then
+                Label33.ForeColor = Color.Lime
+                Label33.Text = ErrorMessage
+            ElseIf SID = 2 Then
                 Label27.ForeColor = Color.Lime
                 Label27.Text = ErrorMessage
             ElseIf SID = 3 Then
@@ -391,7 +407,10 @@ Public Class Form1
         ElseIf succID = 2 Then
             ErrorMessage = "Case Passed"
 
-            If SID = 2 Then
+            If SID = 1 Then
+                Label33.ForeColor = Color.Lime
+                Label33.Text = ErrorMessage
+            ElseIf SID = 2 Then
                 Label27.ForeColor = Color.Lime
                 Label27.Text = ErrorMessage
             ElseIf SID = 3 Then
@@ -454,7 +473,7 @@ Public Class Form1
 
 
         '''''''CHECK TABLE CASES'''''''''''
-        Dim TableActiveCase As String = "Select PH.SomtrackID, PH.StationID, PH.DateStarted FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PD.Status = 1 And PH.StationID Is Not NULL GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted ORDER BY PH.DateStarted ASC"
+        Dim TableActiveCase As String = "Select PH.SomtrackID, PH.StationID, PH.DateStarted FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And PH.TableNo = @TS And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PD.Status = 1 And PH.StationID Is Not NULL GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted ORDER BY PH.DateStarted ASC"
         Dim TableActiveCaseQuery As SqlCommand = New SqlCommand(TableActiveCase, con2)
         TableActiveCaseQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -532,8 +551,21 @@ Public Class Form1
         Label46.Text = "0"
         Label47.Text = "0"
         Label48.Text = "0"
+
+        Label56.Text = "0"
+        Label55.Text = "0"
+        Label54.Text = "0"
+        Label53.Text = "0"
+        Label50.Text = "0"
+        Label49.Text = "0"
+        Label51.Text = "0"
+        Label52.Text = "0"
+        Label60.Text = "0"
+        Label59.Text = "0"
+        Label58.Text = "0"
+        Label57.Text = "0"
         '''''''CHECK PASSED CASES'''''''''''
-        Dim TablePassedCase As String = "SELECT SP.StationID, COUNT(PD.ProductionDetailID) as Done FROM [SMProduction].[dbo].[ProductionDetails] as PD LEFT JOIN TableMembers as TM ON TM.EmployeeID = PD.EmployeeID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID LEFT JOIN StationProcess as SP ON SP.BOMDID = PD.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID WHERE TS.TableSetStatus = 1 AND TM.TableMemberStatus = 1 AND TS.TableID = @TS AND PD.Status = 5 AND SP.StationID = TM.StationID AND PH.TableSetID = TS.TableSetID GROUP BY SP.StationID"
+        Dim TablePassedCase As String = "Select SP.StationID, SUM(Case When PD.Status = 5 Then 1 Else 0 End) As Done , SUM(Case When PD.Status = 4 Then 1 Else 0 End) As Redo FROM [SMProduction].[dbo].[ProductionDetails] As PD LEFT JOIN TableMembers As TM On TM.EmployeeID = PD.EmployeeID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID LEFT JOIN StationProcess As SP On SP.BOMDID = PD.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID WHERE TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And TS.TableID = @TS And PH.TableNo = @TS And PD.Status In (4,5) And SP.StationID = TM.StationID And PD.DateEnded BETWEEN TM.TableMemberTimeIn And GETDATE() GROUP BY SP.StationID"
         Dim TablePassedCasQuery As SqlCommand = New SqlCommand(TablePassedCase, con2)
         TablePassedCasQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -543,28 +575,40 @@ Public Class Form1
                 While reader.Read()
                     If (reader.Item("StationID") = 1) Then
                         Label45.Text = reader.Item("Done").ToString
+                        Label56.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 2) Then
                         Label44.Text = reader.Item("Done").ToString
+                        Label55.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 3) Then
                         Label40.Text = reader.Item("Done").ToString
+                        Label54.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 4) Then
                         Label39.Text = reader.Item("Done").ToString
+                        Label53.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 5) Then
                         Label38.Text = reader.Item("Done").ToString
+                        Label50.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 6) Then
                         Label37.Text = reader.Item("Done").ToString
+                        Label49.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 7) Then
                         Label41.Text = reader.Item("Done").ToString
+                        Label51.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 8) Then
                         Label42.Text = reader.Item("Done").ToString
+                        Label52.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 9) Then
                         Label43.Text = reader.Item("Done").ToString
+                        Label60.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 10) Then
                         Label46.Text = reader.Item("Done").ToString
+                        Label59.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 11) Then
                         Label47.Text = reader.Item("Done").ToString
+                        Label58.Text = reader.Item("Redo").ToString
                     ElseIf (reader.Item("StationID") = 12) Then
                         Label48.Text = reader.Item("Done").ToString
+                        Label57.Text = reader.Item("Redo").ToString
                     End If
                 End While
 
@@ -575,7 +619,7 @@ Public Class Form1
     Private Sub GetPending()
 
 
-
+        Dim s1pending = ""
         Dim s2pending = ""
         Dim s3pending = ""
         Dim s4pending = ""
@@ -587,6 +631,7 @@ Public Class Form1
         Dim s10pending = ""
         Dim s11pending = ""
 
+        s1case = 0
         s2case = 0
         s3case = 0
         s4case = 0
@@ -600,7 +645,7 @@ Public Class Form1
 
 
         '''''''CHECK TABLE CASES'''''''''''
-        Dim TableCase As String = "SELECT PH.SomtrackID, PH.StationID, PH.DateStarted FROM ProductionDetails as PD LEFT JOIN StationProcess as SP ON PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers as TM ON TM.StationID = SP.StationID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS AND TS.TableSetStatus = 1 AND TM.TableMemberStatus = 1 AND PD.Status = 2 AND PH.StationID IS NOT NULL GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted ORDER BY PH.DateStarted ASC"
+        Dim TableCase As String = "Select PH.SomtrackID, PH.StationID, PH.DateStarted FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And PH.TableNo = @TS And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PD.Status = 2 And PH.StationID Is Not NULL GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted ORDER BY PH.DateStarted ASC"
         Dim TableCaseQuery As SqlCommand = New SqlCommand(TableCase, con2)
         TableCaseQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -608,7 +653,10 @@ Public Class Form1
         Using reader As SqlDataReader = TableCaseQuery.ExecuteReader()
             If reader.HasRows Then
                 While reader.Read()
-                    If (reader.Item("StationID") = 2) Then
+                    If (reader.Item("StationID") = 1) Then
+                        s1case = s1case + 1
+                        s1pending = s1pending + reader.Item("SomtrackID").ToString + vbCrLf
+                    ElseIf (reader.Item("StationID") = 2) Then
                         s2case = s2case + 1
                         s2pending = s2pending + reader.Item("SomtrackID").ToString + vbCrLf
 
@@ -653,6 +701,12 @@ Public Class Form1
 
             End If
         End Using
+
+        If s1pending <> "" Then
+            Label31.Text = "➤" + s1pending
+        Else
+            Label31.Text = s1pending
+        End If
         If s2pending <> "" Then
             Label25.Text = "➤" + s2pending
         Else
@@ -756,8 +810,21 @@ Public Class Form1
         Dim s11Print = ""
         Dim s12Print = ""
 
+        s1timer = 0
+        s2timer = 0
+        s3timer = 0
+        s4timer = 0
+        s5timer = 0
+        s6timer = 0
+        s7timer = 0
+        s8timer = 0
+        s9timer = 0
+        s10timer = 0
+        s11timer = 0
+        s12timer = 0
+
         '''''''CHECK TABLE CASES'''''''''''
-        Dim TableCase As String = "SELECT PH.SomtrackID, PH.StationID, PH.DateStarted FROM ProductionDetails as PD LEFT JOIN StationProcess as SP ON PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead as PH ON PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers as TM ON TM.StationID = SP.StationID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS AND TS.TableSetStatus = 1 AND TM.TableMemberStatus = 1 AND PD.Status = 2 AND PH.StationID IS NOT NULL GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted ORDER BY PH.DateStarted ASC"
+        Dim TableCase As String = "Select PH.SomtrackID, PH.StationID, PH.DateStarted FROM ProductionDetails As PD LEFT JOIN StationProcess As SP On PD.BOMDID = SP.BOMDID LEFT JOIN ProductionHead As PH On PH.ProductionHeadID = PD.ProductionHeadID LEFT JOIN TableMembers As TM On TM.StationID = SP.StationID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID WHERE TS.TableID = @TS And PH.TableNo = @TS And TS.TableSetStatus = 1 And TM.TableMemberStatus = 1 And PD.Status = 2 And PH.StationID Is Not NULL GROUP BY PH.SomtrackID, PH.StationID, PH.DateStarted ORDER BY PH.DateStarted ASC"
         Dim TableCaseQuery As SqlCommand = New SqlCommand(TableCase, con3)
         TableCaseQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -765,12 +832,17 @@ Public Class Form1
         Using reader As SqlDataReader = TableCaseQuery.ExecuteReader()
             If reader.HasRows Then
                 While reader.Read()
-                    If (reader.Item("StationID") = 2) Then
+                    If (reader.Item("StationID") = 1) Then
+                        s1caseStat = 1
+                        s1timer = 0
+                        Label33.ForeColor = Color.DarkOrange
+                        s1Print = "Idle"
+
+                    ElseIf (reader.Item("StationID") = 2) Then
                         s2caseStat = 1
                         s2timer = 0
                         Label27.ForeColor = Color.DarkOrange
                         s2Print = "Idle"
-
                     ElseIf (reader.Item("StationID") = 3) Then
                         s3caseStat = 1
                         s3timer = 0
@@ -844,7 +916,7 @@ Public Class Form1
 
 
         '''''''CHECK CASE DURATION ''''''''''
-        Dim CaseDuration As String = "SELECT SP.StationID, DATEDIFF(second,PD.DateStarted,GETDATE()) as Duration FROM [SMProduction].[dbo].[ProductionDetails] as PD LEFT JOIN TableMembers as TM ON TM.EmployeeID = PD.EmployeeID LEFT JOIN TableSet as TS ON TS.TableSetID = TM.TableSetID LEFT JOIN StationProcess as SP ON SP.BOMDID = PD.BOMDID WHERE TS.TableSetStatus = 1 AND TM.TableMemberStatus = 1 AND TS.TableID = @TS AND PD.Status = 1 AND SP.StationID = TM.StationID GROUP BY SP.StationID, PD.DateStarted,PD.DateEnded"
+        Dim CaseDuration As String = "Select SP.StationID, DATEDIFF( second, PD.DateStarted, GETDATE() ) As Duration, OD.Duration As TargetDuration FROM [SMProduction].[dbo].[ProductionDetails] As PD LEFT JOIN TableMembers As TM On TM.EmployeeID = PD.EmployeeID LEFT JOIN TableSet As TS On TS.TableSetID = TM.TableSetID LEFT JOIN StationProcess As SP On SP.BOMDID = PD.BOMDID LEFT JOIN BillOfMaterialsDetails As BOMD On BOMD.BOMDID =PD.BOMDID LEFT JOIN ( Select [OperationID], SUM(DATEDIFF(second,'00:00:00',[Duration])) as Duration FROM [SMProduction].[dbo].[OperationsDetail] GROUP BY OperationID ) as OD ON OD.OperationID = BOMD.OperationID WHERE TS.TableSetStatus = 1 AND TM.TableMemberStatus = 1 AND TS.TableID = @TS AND PD.Status = 1 AND SP.StationID = TM.StationID GROUP BY SP.StationID, PD.DateStarted, PD.DateEnded, Duration"
         Dim CaseDurationQuery As SqlCommand = New SqlCommand(CaseDuration, con3)
         CaseDurationQuery.Parameters.AddWithValue("@TS", TableSet)
 
@@ -856,35 +928,35 @@ Public Class Form1
                         s1caseStat = 1
                         Label33.ForeColor = Color.Lime
                         s1Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s1Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s1timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 2) Then
                             s2caseStat = 1
                             Label27.ForeColor = Color.Lime
                         s2Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s2Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s2timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 3) Then
                             s3caseStat = 1
                             Label24.ForeColor = Color.Lime
                         s3Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s3Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s3timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 4) Then
                             s4caseStat = 1
                             Label15.ForeColor = Color.Lime
                         s4Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s4Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s4timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 5) Then
                             s5caseStat = 1
                             Label12.ForeColor = Color.Lime
                         s5Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s5Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s5timer = 1
                         End If
 
@@ -892,49 +964,49 @@ Public Class Form1
                             s6caseStat = 1
                             Label1.ForeColor = Color.Lime
                         s6Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s6Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s6timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 7) Then
                             s7caseStat = 1
                             Label6.ForeColor = Color.Lime
                         s7Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s7Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s7timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 8) Then
                             s8caseStat = 1
                             Label9.ForeColor = Color.Lime
                         s8Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s8Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s8timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 9) Then
                             s9caseStat = 1
                             Label18.ForeColor = Color.Lime
                         s9Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s9Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s9timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 10) Then
                             s10caseStat = 1
                             Label21.ForeColor = Color.Lime
                         s10Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s10Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s10timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 11) Then
                             s11caseStat = 1
                             Label30.ForeColor = Color.Lime
                         s11Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s11Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s11timer = 1
                         End If
                     ElseIf (reader.Item("StationID") = 12) Then
                             s12caseStat = 1
                         Label36.ForeColor = Color.Lime
                         s12Print = TimeSpan.FromSeconds(reader.Item("Duration")).ToString
-                        If TimeValue(s12Print) > TimeValue("00:10:00") Then
+                        If reader.Item("Duration") > reader.Item("TargetDuration") Then
                             s12timer = 1
                         End If
                     End If
@@ -1086,178 +1158,154 @@ Public Class Form1
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        If s2case > 3 Then
-            If PictureBox15.Visible = False Then
+        If showwarning = 0 Then
+            If s1case > 3 Then
+
+                PictureBox14.Visible = True
+
+            End If
+
+            If s2case > 3 Then
+
                 PictureBox15.Visible = True
-            Else
-                PictureBox15.Visible = False
+
             End If
-        Else
-            PictureBox15.Visible = False
-        End If
-        If s3case > 3 Then
-            If PictureBox16.Visible = False Then
+            If s3case > 3 Then
+
                 PictureBox16.Visible = True
-            Else
-                PictureBox16.Visible = False
+
             End If
-        Else
-            PictureBox16.Visible = False
-        End If
-        If s4case > 3 Then
-            If PictureBox17.Visible = False Then
+            If s4case > 3 Then
+
                 PictureBox17.Visible = True
-            Else
-                PictureBox17.Visible = False
+
             End If
-        Else
-            PictureBox17.Visible = False
-        End If
-        If s5case > 3 Then
-            If PictureBox18.Visible = False Then
+            If s5case > 3 Then
+
                 PictureBox18.Visible = True
-            Else
-                PictureBox18.Visible = False
+
             End If
-        Else
-            PictureBox18.Visible = False
-        End If
-        If s6case > 3 Then
-            If PictureBox19.Visible = False Then
+            If s6case > 3 Then
+
                 PictureBox19.Visible = True
-            Else
-                PictureBox19.Visible = False
+
             End If
-        Else
-            PictureBox19.Visible = False
-        End If
-        If s7case > 3 Then
-            If PictureBox20.Visible = False Then
+            If s7case > 3 Then
+
                 PictureBox20.Visible = True
-            Else
-                PictureBox20.Visible = False
+
             End If
-        Else
-            PictureBox20.Visible = False
-        End If
-        If s8case > 3 Then
-            If PictureBox21.Visible = False Then
+            If s8case > 3 Then
+
                 PictureBox21.Visible = True
-            Else
-                PictureBox21.Visible = False
+
             End If
-        Else
-            PictureBox21.Visible = False
-        End If
-        If s9case > 3 Then
-            If PictureBox22.Visible = False Then
+            If s9case > 3 Then
+
                 PictureBox22.Visible = True
-            Else
-                PictureBox22.Visible = False
+
             End If
-        Else
-            PictureBox22.Visible = False
-        End If
-        If s10case > 3 Then
-            If PictureBox23.Visible = False Then
+            If s10case > 3 Then
+
                 PictureBox23.Visible = True
-            Else
-                PictureBox23.Visible = False
+
             End If
-        Else
-            PictureBox23.Visible = False
-        End If
-        If s11case > 3 Then
-            If PictureBox24.Visible = False Then
+            If s11case > 3 Then
+
                 PictureBox24.Visible = True
                 PictureBox25.Visible = True
-            Else
-                PictureBox24.Visible = False
-                PictureBox25.Visible = False
+
             End If
+
+
+
+
+            If s1timer = 1 Then
+
+            End If
+            If s2timer = 1 Then
+                PictureBox27.Visible = True
+
+            End If
+
+            If s3timer = 1 Then
+                PictureBox28.Visible = True
+
+            End If
+
+            If s4timer = 1 Then
+                PictureBox29.Visible = True
+
+            End If
+
+            If s5timer = 1 Then
+                PictureBox30.Visible = True
+
+            End If
+
+            If s6timer = 1 Then
+                PictureBox31.Visible = True
+
+            End If
+
+            If s7timer = 1 Then
+                PictureBox32.Visible = True
+
+            End If
+
+            If s8timer = 1 Then
+                PictureBox33.Visible = True
+
+            End If
+
+            If s9timer = 1 Then
+                PictureBox34.Visible = True
+
+            End If
+
+            If s10timer = 1 Then
+                PictureBox35.Visible = True
+
+            End If
+
+            If s11timer = 1 Then
+                PictureBox36.Visible = True
+
+            End If
+
+            If s12timer = 1 Then
+                PictureBox37.Visible = True
+
+            End If
+            showwarning = 1
         Else
+            PictureBox14.Visible = False
+            PictureBox15.Visible = False
+            PictureBox16.Visible = False
+            PictureBox17.Visible = False
+            PictureBox18.Visible = False
+            PictureBox19.Visible = False
+            PictureBox20.Visible = False
+            PictureBox21.Visible = False
+            PictureBox22.Visible = False
+            PictureBox23.Visible = False
             PictureBox24.Visible = False
             PictureBox25.Visible = False
-        End If
-
-
-
-
-
-
-
-        If s1timer = 1 And PictureBox26.Visible = False Then
-            PictureBox26.Visible = True
-        Else
             PictureBox26.Visible = False
-        End If
-        If s2timer = 1 And PictureBox27.Visible = False Then
-            PictureBox27.Visible = True
-        Else
             PictureBox27.Visible = False
-        End If
-
-        If s3timer = 1 And PictureBox28.Visible = False Then
-            PictureBox28.Visible = True
-        Else
             PictureBox28.Visible = False
-        End If
-
-        If s4timer = 1 And PictureBox29.Visible = False Then
-            PictureBox29.Visible = True
-        Else
             PictureBox29.Visible = False
-        End If
-
-        If s5timer = 1 And PictureBox30.Visible = False Then
-            PictureBox30.Visible = True
-        Else
             PictureBox30.Visible = False
-        End If
-
-        If s6timer = 1 And PictureBox31.Visible = False Then
-            PictureBox31.Visible = True
-        Else
             PictureBox31.Visible = False
-        End If
-
-        If s7timer = 1 And PictureBox32.Visible = False Then
-            PictureBox32.Visible = True
-        Else
             PictureBox32.Visible = False
-        End If
-
-        If s8timer = 1 And PictureBox33.Visible = False Then
-            PictureBox33.Visible = True
-        Else
             PictureBox33.Visible = False
-        End If
-
-        If s9timer = 1 And PictureBox34.Visible = False Then
-            PictureBox34.Visible = True
-        Else
             PictureBox34.Visible = False
-        End If
-
-        If s10timer = 1 And PictureBox35.Visible = False Then
-            PictureBox35.Visible = True
-        Else
             PictureBox35.Visible = False
-        End If
-
-        If s11timer = 1 And PictureBox36.Visible = False Then
-            PictureBox36.Visible = True
-        Else
             PictureBox36.Visible = False
-        End If
-
-        If s12timer = 1 And PictureBox37.Visible = False Then
-            PictureBox37.Visible = True
-        Else
             PictureBox37.Visible = False
+
+            showwarning = 0
         End If
-
-
 
     End Sub
 

@@ -25,179 +25,179 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label72 = New System.Windows.Forms.Label()
+        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label71 = New System.Windows.Forms.Label()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
         Me.Label58 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label71 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label70 = New System.Windows.Forms.Label()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label70 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label69 = New System.Windows.Forms.Label()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.Label60 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label68 = New System.Windows.Forms.Label()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label67 = New System.Windows.Forms.Label()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label61 = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label65 = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label66 = New System.Windows.Forms.Label()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox28 = New System.Windows.Forms.PictureBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.Label54 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox31 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label66 = New System.Windows.Forms.Label()
         Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
         CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel7
@@ -217,30 +217,28 @@ Partial Class Form1
         Me.Panel7.Size = New System.Drawing.Size(935, 165)
         Me.Panel7.TabIndex = 9
         '
-        'Label34
+        'PictureBox37
         '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label34.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label34.Location = New System.Drawing.Point(635, 5)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(35, 54)
-        Me.Label34.TabIndex = 7
-        Me.Label34.Text = " "
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox37.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox37.Location = New System.Drawing.Point(570, 11)
+        Me.PictureBox37.Name = "PictureBox37"
+        Me.PictureBox37.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox37.TabIndex = 21
+        Me.PictureBox37.TabStop = False
         '
-        'Label72
+        'PictureBox25
         '
-        Me.Label72.AutoSize = True
-        Me.Label72.BackColor = System.Drawing.Color.Transparent
-        Me.Label72.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label72.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label72.Location = New System.Drawing.Point(780, 52)
-        Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(191, 135)
-        Me.Label72.TabIndex = 17
-        Me.Label72.Text = "12"
-        Me.Label72.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox25.Image = CType(resources.GetObject("PictureBox25.Image"), System.Drawing.Image)
+        Me.PictureBox25.Location = New System.Drawing.Point(872, 7)
+        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox25.TabIndex = 19
+        Me.PictureBox25.TabStop = False
+        Me.PictureBox25.Visible = False
         '
         'Label57
         '
@@ -270,6 +268,16 @@ Partial Class Form1
         Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label48.UseCompatibleTextRendering = True
         '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
+        Me.PictureBox13.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 8
+        Me.PictureBox13.TabStop = False
+        '
         'Label35
         '
         Me.Label35.AutoSize = True
@@ -294,6 +302,31 @@ Partial Class Form1
         Me.Label36.Text = " "
         Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label34.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label34.Location = New System.Drawing.Point(635, 5)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(35, 54)
+        Me.Label34.TabIndex = 7
+        Me.Label34.Text = " "
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label72
+        '
+        Me.Label72.AutoSize = True
+        Me.Label72.BackColor = System.Drawing.Color.Transparent
+        Me.Label72.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label72.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label72.Location = New System.Drawing.Point(780, 52)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(191, 135)
+        Me.Label72.TabIndex = 17
+        Me.Label72.Text = "12"
+        Me.Label72.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -311,30 +344,28 @@ Partial Class Form1
         Me.Panel8.Size = New System.Drawing.Size(935, 165)
         Me.Panel8.TabIndex = 10
         '
-        'Label28
+        'PictureBox36
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label28.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label28.Location = New System.Drawing.Point(635, 5)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(35, 54)
-        Me.Label28.TabIndex = 7
-        Me.Label28.Text = " "
-        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox36.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox36.Location = New System.Drawing.Point(570, 11)
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox36.TabIndex = 21
+        Me.PictureBox36.TabStop = False
         '
-        'Label71
+        'PictureBox24
         '
-        Me.Label71.AutoSize = True
-        Me.Label71.BackColor = System.Drawing.Color.Transparent
-        Me.Label71.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label71.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label71.Location = New System.Drawing.Point(793, 51)
-        Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(191, 135)
-        Me.Label71.TabIndex = 17
-        Me.Label71.Text = "11"
-        Me.Label71.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), System.Drawing.Image)
+        Me.PictureBox24.Location = New System.Drawing.Point(872, 7)
+        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox24.TabIndex = 19
+        Me.PictureBox24.TabStop = False
+        Me.PictureBox24.Visible = False
         '
         'Label58
         '
@@ -364,6 +395,16 @@ Partial Class Form1
         Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label47.UseCompatibleTextRendering = True
         '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
+        Me.PictureBox11.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 8
+        Me.PictureBox11.TabStop = False
+        '
         'Label29
         '
         Me.Label29.AutoSize = True
@@ -388,6 +429,31 @@ Partial Class Form1
         Me.Label30.Text = " "
         Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label28.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label28.Location = New System.Drawing.Point(635, 5)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(35, 54)
+        Me.Label28.TabIndex = 7
+        Me.Label28.Text = " "
+        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label71
+        '
+        Me.Label71.AutoSize = True
+        Me.Label71.BackColor = System.Drawing.Color.Transparent
+        Me.Label71.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label71.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label71.Location = New System.Drawing.Point(793, 51)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(191, 135)
+        Me.Label71.TabIndex = 17
+        Me.Label71.Text = "11"
+        Me.Label71.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -405,30 +471,28 @@ Partial Class Form1
         Me.Panel9.Size = New System.Drawing.Size(935, 165)
         Me.Panel9.TabIndex = 8
         '
-        'Label19
+        'PictureBox35
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label19.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label19.Location = New System.Drawing.Point(635, 5)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(35, 54)
-        Me.Label19.TabIndex = 7
-        Me.Label19.Text = " "
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox35.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox35.Location = New System.Drawing.Point(570, 11)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox35.TabIndex = 21
+        Me.PictureBox35.TabStop = False
         '
-        'Label70
+        'PictureBox23
         '
-        Me.Label70.AutoSize = True
-        Me.Label70.BackColor = System.Drawing.Color.Transparent
-        Me.Label70.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label70.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label70.Location = New System.Drawing.Point(779, 50)
-        Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(191, 135)
-        Me.Label70.TabIndex = 17
-        Me.Label70.Text = "10"
-        Me.Label70.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), System.Drawing.Image)
+        Me.PictureBox23.Location = New System.Drawing.Point(871, 8)
+        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox23.TabIndex = 19
+        Me.PictureBox23.TabStop = False
+        Me.PictureBox23.Visible = False
         '
         'Label59
         '
@@ -458,6 +522,16 @@ Partial Class Form1
         Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label46.UseCompatibleTextRendering = True
         '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 8
+        Me.PictureBox8.TabStop = False
+        '
         'Label20
         '
         Me.Label20.AutoSize = True
@@ -482,6 +556,31 @@ Partial Class Form1
         Me.Label21.Text = " "
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label19.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label19.Location = New System.Drawing.Point(635, 5)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(35, 54)
+        Me.Label19.TabIndex = 7
+        Me.Label19.Text = " "
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.BackColor = System.Drawing.Color.Transparent
+        Me.Label70.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label70.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label70.Location = New System.Drawing.Point(779, 50)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(191, 135)
+        Me.Label70.TabIndex = 17
+        Me.Label70.Text = "10"
+        Me.Label70.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -499,30 +598,28 @@ Partial Class Form1
         Me.Panel10.Size = New System.Drawing.Size(935, 165)
         Me.Panel10.TabIndex = 7
         '
-        'Label16
+        'PictureBox34
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label16.Location = New System.Drawing.Point(636, 5)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(35, 54)
-        Me.Label16.TabIndex = 7
-        Me.Label16.Text = " "
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox34.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox34.Location = New System.Drawing.Point(570, 11)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox34.TabIndex = 21
+        Me.PictureBox34.TabStop = False
         '
-        'Label69
+        'PictureBox22
         '
-        Me.Label69.AutoSize = True
-        Me.Label69.BackColor = System.Drawing.Color.Transparent
-        Me.Label69.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label69.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label69.Location = New System.Drawing.Point(846, 52)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(124, 135)
-        Me.Label69.TabIndex = 17
-        Me.Label69.Text = "9"
-        Me.Label69.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
+        Me.PictureBox22.Location = New System.Drawing.Point(872, 5)
+        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox22.TabIndex = 19
+        Me.PictureBox22.TabStop = False
+        Me.PictureBox22.Visible = False
         '
         'Label60
         '
@@ -552,6 +649,16 @@ Partial Class Form1
         Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label43.UseCompatibleTextRendering = True
         '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 8
+        Me.PictureBox7.TabStop = False
+        '
         'Label17
         '
         Me.Label17.AutoSize = True
@@ -576,6 +683,31 @@ Partial Class Form1
         Me.Label18.Text = " "
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label16.Location = New System.Drawing.Point(636, 5)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(35, 54)
+        Me.Label16.TabIndex = 7
+        Me.Label16.Text = " "
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.BackColor = System.Drawing.Color.Transparent
+        Me.Label69.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label69.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label69.Location = New System.Drawing.Point(846, 52)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(124, 135)
+        Me.Label69.TabIndex = 17
+        Me.Label69.Text = "9"
+        Me.Label69.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -593,30 +725,28 @@ Partial Class Form1
         Me.Panel11.Size = New System.Drawing.Size(935, 165)
         Me.Panel11.TabIndex = 6
         '
-        'Label7
+        'PictureBox33
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label7.Location = New System.Drawing.Point(636, 5)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 54)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = " "
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox33.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox33.Location = New System.Drawing.Point(570, 11)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox33.TabIndex = 21
+        Me.PictureBox33.TabStop = False
         '
-        'Label68
+        'PictureBox21
         '
-        Me.Label68.AutoSize = True
-        Me.Label68.BackColor = System.Drawing.Color.Transparent
-        Me.Label68.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label68.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label68.Location = New System.Drawing.Point(846, 50)
-        Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(124, 135)
-        Me.Label68.TabIndex = 17
-        Me.Label68.Text = "8"
-        Me.Label68.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), System.Drawing.Image)
+        Me.PictureBox21.Location = New System.Drawing.Point(872, 5)
+        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox21.TabIndex = 19
+        Me.PictureBox21.TabStop = False
+        Me.PictureBox21.Visible = False
         '
         'Label52
         '
@@ -646,6 +776,16 @@ Partial Class Form1
         Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label42.UseCompatibleTextRendering = True
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 8
+        Me.PictureBox4.TabStop = False
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -670,6 +810,31 @@ Partial Class Form1
         Me.Label9.Text = " "
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label7.Location = New System.Drawing.Point(636, 5)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(35, 54)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = " "
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label68
+        '
+        Me.Label68.AutoSize = True
+        Me.Label68.BackColor = System.Drawing.Color.Transparent
+        Me.Label68.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label68.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label68.Location = New System.Drawing.Point(846, 50)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(124, 135)
+        Me.Label68.TabIndex = 17
+        Me.Label68.Text = "8"
+        Me.Label68.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel12
         '
         Me.Panel12.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -687,30 +852,28 @@ Partial Class Form1
         Me.Panel12.Size = New System.Drawing.Size(935, 165)
         Me.Panel12.TabIndex = 5
         '
-        'Label4
+        'PictureBox32
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label4.Location = New System.Drawing.Point(636, 5)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 54)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = " "
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox32.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox32.Location = New System.Drawing.Point(570, 11)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox32.TabIndex = 21
+        Me.PictureBox32.TabStop = False
         '
-        'Label67
+        'PictureBox20
         '
-        Me.Label67.AutoSize = True
-        Me.Label67.BackColor = System.Drawing.Color.Transparent
-        Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label67.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label67.Location = New System.Drawing.Point(846, 49)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(124, 135)
-        Me.Label67.TabIndex = 17
-        Me.Label67.Text = "7"
-        Me.Label67.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
+        Me.PictureBox20.Location = New System.Drawing.Point(872, 6)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox20.TabIndex = 19
+        Me.PictureBox20.TabStop = False
+        Me.PictureBox20.Visible = False
         '
         'Label51
         '
@@ -740,6 +903,16 @@ Partial Class Form1
         Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label41.UseCompatibleTextRendering = True
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 8
+        Me.PictureBox3.TabStop = False
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -763,6 +936,31 @@ Partial Class Form1
         Me.Label6.TabIndex = 5
         Me.Label6.Text = " "
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label4.Location = New System.Drawing.Point(636, 5)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 54)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = " "
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.BackColor = System.Drawing.Color.Transparent
+        Me.Label67.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label67.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label67.Location = New System.Drawing.Point(846, 49)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(124, 135)
+        Me.Label67.TabIndex = 17
+        Me.Label67.Text = "7"
+        Me.Label67.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Timer1
         '
@@ -805,31 +1003,28 @@ Partial Class Form1
         Me.Panel6.Size = New System.Drawing.Size(935, 165)
         Me.Panel6.TabIndex = 16
         '
-        'Label31
+        'PictureBox26
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label31.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label31.Location = New System.Drawing.Point(643, 5)
-        Me.Label31.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(35, 54)
-        Me.Label31.TabIndex = 7
-        Me.Label31.Text = " "
-        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox26.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox26.Location = New System.Drawing.Point(574, 11)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox26.TabIndex = 21
+        Me.PictureBox26.TabStop = False
         '
-        'Label61
+        'PictureBox14
         '
-        Me.Label61.AutoSize = True
-        Me.Label61.BackColor = System.Drawing.Color.Transparent
-        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label61.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label61.Location = New System.Drawing.Point(861, 52)
-        Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(124, 135)
-        Me.Label61.TabIndex = 15
-        Me.Label61.Text = "1"
-        Me.Label61.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
+        Me.PictureBox14.Location = New System.Drawing.Point(873, 10)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox14.TabIndex = 18
+        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Visible = False
         '
         'Label56
         '
@@ -859,6 +1054,16 @@ Partial Class Form1
         Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label45.UseCompatibleTextRendering = True
         '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
+        Me.PictureBox12.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox12.TabIndex = 8
+        Me.PictureBox12.TabStop = False
+        '
         'Label32
         '
         Me.Label32.AutoSize = True
@@ -883,6 +1088,32 @@ Partial Class Form1
         Me.Label33.Text = " "
         Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label31.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label31.Location = New System.Drawing.Point(643, 5)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(35, 54)
+        Me.Label31.TabIndex = 7
+        Me.Label31.Text = " "
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.BackColor = System.Drawing.Color.Transparent
+        Me.Label61.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label61.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label61.Location = New System.Drawing.Point(861, 52)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(124, 135)
+        Me.Label61.TabIndex = 15
+        Me.Label61.Text = "1"
+        Me.Label61.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -900,19 +1131,28 @@ Partial Class Form1
         Me.Panel5.Size = New System.Drawing.Size(935, 165)
         Me.Panel5.TabIndex = 17
         '
-        'Label25
+        'PictureBox27
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label25.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label25.Location = New System.Drawing.Point(643, 5)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(35, 54)
-        Me.Label25.TabIndex = 7
-        Me.Label25.Text = " "
-        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox27.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox27.Location = New System.Drawing.Point(574, 11)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox27.TabIndex = 21
+        Me.PictureBox27.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
+        Me.PictureBox15.Location = New System.Drawing.Point(872, 7)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox15.TabIndex = 19
+        Me.PictureBox15.TabStop = False
+        Me.PictureBox15.Visible = False
         '
         'Label55
         '
@@ -942,6 +1182,16 @@ Partial Class Form1
         Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label44.UseCompatibleTextRendering = True
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
+        Me.PictureBox10.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox10.TabIndex = 8
+        Me.PictureBox10.TabStop = False
+        '
         'Label26
         '
         Me.Label26.AutoSize = True
@@ -965,6 +1215,20 @@ Partial Class Form1
         Me.Label27.TabIndex = 5
         Me.Label27.Text = " "
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label25.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label25.Location = New System.Drawing.Point(643, 5)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(35, 54)
+        Me.Label25.TabIndex = 7
+        Me.Label25.Text = " "
+        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label62
         '
@@ -996,31 +1260,28 @@ Partial Class Form1
         Me.Panel4.Size = New System.Drawing.Size(935, 165)
         Me.Panel4.TabIndex = 15
         '
-        'Label22
+        'PictureBox28
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label22.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label22.Location = New System.Drawing.Point(643, 5)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(35, 54)
-        Me.Label22.TabIndex = 7
-        Me.Label22.Text = " "
-        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox28.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox28.Location = New System.Drawing.Point(574, 11)
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox28.TabIndex = 21
+        Me.PictureBox28.TabStop = False
         '
-        'Label63
+        'PictureBox16
         '
-        Me.Label63.AutoSize = True
-        Me.Label63.BackColor = System.Drawing.Color.Transparent
-        Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label63.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label63.Location = New System.Drawing.Point(847, 52)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(124, 135)
-        Me.Label63.TabIndex = 17
-        Me.Label63.Text = "3"
-        Me.Label63.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
+        Me.PictureBox16.Location = New System.Drawing.Point(872, 7)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox16.TabIndex = 19
+        Me.PictureBox16.TabStop = False
+        Me.PictureBox16.Visible = False
         '
         'Label54
         '
@@ -1050,6 +1311,16 @@ Partial Class Form1
         Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label40.UseCompatibleTextRendering = True
         '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 8
+        Me.PictureBox9.TabStop = False
+        '
         'Label23
         '
         Me.Label23.AutoSize = True
@@ -1074,6 +1345,32 @@ Partial Class Form1
         Me.Label24.Text = " "
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label22.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label22.Location = New System.Drawing.Point(643, 5)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(35, 54)
+        Me.Label22.TabIndex = 7
+        Me.Label22.Text = " "
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.BackColor = System.Drawing.Color.Transparent
+        Me.Label63.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label63.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label63.Location = New System.Drawing.Point(847, 52)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(124, 135)
+        Me.Label63.TabIndex = 17
+        Me.Label63.Text = "3"
+        Me.Label63.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -1091,31 +1388,28 @@ Partial Class Form1
         Me.Panel3.Size = New System.Drawing.Size(935, 165)
         Me.Panel3.TabIndex = 14
         '
-        'Label13
+        'PictureBox29
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label13.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label13.Location = New System.Drawing.Point(643, 7)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(35, 54)
-        Me.Label13.TabIndex = 7
-        Me.Label13.Text = " "
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox29.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox29.Location = New System.Drawing.Point(574, 13)
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox29.TabIndex = 21
+        Me.PictureBox29.TabStop = False
         '
-        'Label64
+        'PictureBox17
         '
-        Me.Label64.AutoSize = True
-        Me.Label64.BackColor = System.Drawing.Color.Transparent
-        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label64.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label64.Location = New System.Drawing.Point(847, 52)
-        Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(124, 135)
-        Me.Label64.TabIndex = 17
-        Me.Label64.Text = "4"
-        Me.Label64.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
+        Me.PictureBox17.Location = New System.Drawing.Point(874, 7)
+        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox17.TabIndex = 19
+        Me.PictureBox17.TabStop = False
+        Me.PictureBox17.Visible = False
         '
         'Label53
         '
@@ -1145,6 +1439,16 @@ Partial Class Form1
         Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label39.UseCompatibleTextRendering = True
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(3, 5)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 8
+        Me.PictureBox6.TabStop = False
+        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -1169,6 +1473,32 @@ Partial Class Form1
         Me.Label15.Text = " "
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label13.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label13.Location = New System.Drawing.Point(643, 7)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(35, 54)
+        Me.Label13.TabIndex = 7
+        Me.Label13.Text = " "
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.BackColor = System.Drawing.Color.Transparent
+        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label64.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label64.Location = New System.Drawing.Point(847, 52)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(124, 135)
+        Me.Label64.TabIndex = 17
+        Me.Label64.Text = "4"
+        Me.Label64.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -1186,31 +1516,28 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(935, 165)
         Me.Panel2.TabIndex = 13
         '
-        'Label10
+        'PictureBox30
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.Label10.Location = New System.Drawing.Point(642, 5)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(35, 54)
-        Me.Label10.TabIndex = 7
-        Me.Label10.Text = " "
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PictureBox30.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox30.Location = New System.Drawing.Point(574, 11)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox30.TabIndex = 21
+        Me.PictureBox30.TabStop = False
         '
-        'Label65
+        'PictureBox18
         '
-        Me.Label65.AutoSize = True
-        Me.Label65.BackColor = System.Drawing.Color.Transparent
-        Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label65.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label65.Location = New System.Drawing.Point(846, 50)
-        Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(124, 135)
-        Me.Label65.TabIndex = 17
-        Me.Label65.Text = "5"
-        Me.Label65.TextAlign = System.Drawing.ContentAlignment.TopRight
+        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), System.Drawing.Image)
+        Me.PictureBox18.Location = New System.Drawing.Point(873, 6)
+        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox18.TabIndex = 19
+        Me.PictureBox18.TabStop = False
+        Me.PictureBox18.Visible = False
         '
         'Label50
         '
@@ -1240,6 +1567,16 @@ Partial Class Form1
         Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label38.UseCompatibleTextRendering = True
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(2, 3)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 8
+        Me.PictureBox5.TabStop = False
+        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -1264,6 +1601,32 @@ Partial Class Form1
         Me.Label12.Text = " "
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 35.0!)
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.Label10.Location = New System.Drawing.Point(642, 5)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(35, 54)
+        Me.Label10.TabIndex = 7
+        Me.Label10.Text = " "
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.BackColor = System.Drawing.Color.Transparent
+        Me.Label65.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label65.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label65.Location = New System.Drawing.Point(846, 50)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(124, 135)
+        Me.Label65.TabIndex = 17
+        Me.Label65.Text = "5"
+        Me.Label65.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(26, Byte), Integer))
@@ -1282,6 +1645,29 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(935, 165)
         Me.Panel1.TabIndex = 12
         '
+        'PictureBox31
+        '
+        Me.PictureBox31.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
+        Me.PictureBox31.Location = New System.Drawing.Point(574, 11)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(66, 54)
+        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox31.TabIndex = 21
+        Me.PictureBox31.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
+        Me.PictureBox19.Location = New System.Drawing.Point(872, 5)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(0)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(58, 58)
+        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox19.TabIndex = 19
+        Me.PictureBox19.TabStop = False
+        Me.PictureBox19.Visible = False
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -1294,19 +1680,6 @@ Partial Class Form1
         Me.Label3.TabIndex = 3
         Me.Label3.Text = " 123456"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label66
-        '
-        Me.Label66.AutoSize = True
-        Me.Label66.BackColor = System.Drawing.Color.Transparent
-        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
-        Me.Label66.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label66.Location = New System.Drawing.Point(846, 49)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(124, 135)
-        Me.Label66.TabIndex = 17
-        Me.Label66.Text = "6"
-        Me.Label66.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Label49
         '
@@ -1336,6 +1709,16 @@ Partial Class Form1
         Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label37.UseCompatibleTextRendering = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(2, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(206, 159)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -1360,204 +1743,6 @@ Partial Class Form1
         Me.Label1.Text = " "
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PictureBox26
-        '
-        Me.PictureBox26.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox26.Location = New System.Drawing.Point(574, 11)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox26.TabIndex = 21
-        Me.PictureBox26.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
-        Me.PictureBox14.Location = New System.Drawing.Point(858, 7)
-        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox14.TabIndex = 18
-        Me.PictureBox14.TabStop = False
-        Me.PictureBox14.Visible = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox12.TabIndex = 8
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox27
-        '
-        Me.PictureBox27.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox27.Location = New System.Drawing.Point(574, 11)
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox27.TabIndex = 21
-        Me.PictureBox27.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
-        Me.PictureBox15.Location = New System.Drawing.Point(857, 4)
-        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox15.TabIndex = 19
-        Me.PictureBox15.TabStop = False
-        Me.PictureBox15.Visible = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 8
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox28
-        '
-        Me.PictureBox28.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox28.Location = New System.Drawing.Point(574, 11)
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox28.TabIndex = 21
-        Me.PictureBox28.TabStop = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
-        Me.PictureBox16.Location = New System.Drawing.Point(857, 4)
-        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox16.TabIndex = 19
-        Me.PictureBox16.TabStop = False
-        Me.PictureBox16.Visible = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox9.TabIndex = 8
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox29
-        '
-        Me.PictureBox29.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox29.Location = New System.Drawing.Point(574, 13)
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox29.TabIndex = 21
-        Me.PictureBox29.TabStop = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
-        Me.PictureBox17.Location = New System.Drawing.Point(859, 4)
-        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox17.TabIndex = 19
-        Me.PictureBox17.TabStop = False
-        Me.PictureBox17.Visible = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(3, 5)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 8
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox30
-        '
-        Me.PictureBox30.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox30.Location = New System.Drawing.Point(574, 11)
-        Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox30.TabIndex = 21
-        Me.PictureBox30.TabStop = False
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), System.Drawing.Image)
-        Me.PictureBox18.Location = New System.Drawing.Point(858, 3)
-        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox18.TabIndex = 19
-        Me.PictureBox18.TabStop = False
-        Me.PictureBox18.Visible = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(2, 3)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 8
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox31
-        '
-        Me.PictureBox31.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox31.Location = New System.Drawing.Point(574, 11)
-        Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox31.TabIndex = 21
-        Me.PictureBox31.TabStop = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
-        Me.PictureBox19.Location = New System.Drawing.Point(857, 2)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox19.TabIndex = 19
-        Me.PictureBox19.TabStop = False
-        Me.PictureBox19.Visible = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(2, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -1568,203 +1753,18 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox37
+        'Label66
         '
-        Me.PictureBox37.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox37.Location = New System.Drawing.Point(570, 11)
-        Me.PictureBox37.Name = "PictureBox37"
-        Me.PictureBox37.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox37.TabIndex = 21
-        Me.PictureBox37.TabStop = False
-        '
-        'PictureBox25
-        '
-        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox25.Image = CType(resources.GetObject("PictureBox25.Image"), System.Drawing.Image)
-        Me.PictureBox25.Location = New System.Drawing.Point(857, 4)
-        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox25.TabIndex = 19
-        Me.PictureBox25.TabStop = False
-        Me.PictureBox25.Visible = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
-        Me.PictureBox13.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox13.TabIndex = 8
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox36
-        '
-        Me.PictureBox36.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox36.Location = New System.Drawing.Point(570, 11)
-        Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox36.TabIndex = 21
-        Me.PictureBox36.TabStop = False
-        '
-        'PictureBox24
-        '
-        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), System.Drawing.Image)
-        Me.PictureBox24.Location = New System.Drawing.Point(857, 4)
-        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox24.TabIndex = 19
-        Me.PictureBox24.TabStop = False
-        Me.PictureBox24.Visible = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 8
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox35
-        '
-        Me.PictureBox35.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox35.Location = New System.Drawing.Point(570, 11)
-        Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox35.TabIndex = 21
-        Me.PictureBox35.TabStop = False
-        '
-        'PictureBox23
-        '
-        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), System.Drawing.Image)
-        Me.PictureBox23.Location = New System.Drawing.Point(856, 5)
-        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox23.TabIndex = 19
-        Me.PictureBox23.TabStop = False
-        Me.PictureBox23.Visible = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 8
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox34
-        '
-        Me.PictureBox34.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox34.Location = New System.Drawing.Point(570, 11)
-        Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox34.TabIndex = 21
-        Me.PictureBox34.TabStop = False
-        '
-        'PictureBox22
-        '
-        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
-        Me.PictureBox22.Location = New System.Drawing.Point(857, 2)
-        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox22.TabIndex = 19
-        Me.PictureBox22.TabStop = False
-        Me.PictureBox22.Visible = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 8
-        Me.PictureBox7.TabStop = False
-        '
-        'PictureBox33
-        '
-        Me.PictureBox33.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox33.Location = New System.Drawing.Point(570, 11)
-        Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox33.TabIndex = 21
-        Me.PictureBox33.TabStop = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), System.Drawing.Image)
-        Me.PictureBox21.Location = New System.Drawing.Point(857, 2)
-        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox21.TabIndex = 19
-        Me.PictureBox21.TabStop = False
-        Me.PictureBox21.Visible = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 8
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox32
-        '
-        Me.PictureBox32.Image = Global.Development_Live.My.Resources.Resources.alarm_clock_512
-        Me.PictureBox32.Location = New System.Drawing.Point(570, 11)
-        Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.Size = New System.Drawing.Size(66, 54)
-        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox32.TabIndex = 21
-        Me.PictureBox32.TabStop = False
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
-        Me.PictureBox20.Location = New System.Drawing.Point(857, 3)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(0)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(85, 70)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox20.TabIndex = 19
-        Me.PictureBox20.TabStop = False
-        Me.PictureBox20.Visible = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(206, 159)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 8
-        Me.PictureBox3.TabStop = False
+        Me.Label66.AutoSize = True
+        Me.Label66.BackColor = System.Drawing.Color.Transparent
+        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 90.0!)
+        Me.Label66.ForeColor = System.Drawing.Color.DarkSlateGray
+        Me.Label66.Location = New System.Drawing.Point(846, 49)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(124, 135)
+        Me.Label66.TabIndex = 17
+        Me.Label66.Text = "6"
+        Me.Label66.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Form1
         '
@@ -1791,65 +1791,65 @@ Partial Class Form1
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
